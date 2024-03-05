@@ -153,6 +153,83 @@ a {
   display: none;
 }
 
+.promote {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.details-box {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+}
+
+.tour-detail-box {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.tour-logo {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 248, 245);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tour-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  margin-top: 7px;
+}
+
+.detail-name {
+  font-family: Roboto-medium;
+  font-size: 19px;
+  color: #05073c;
+}
+
+.detail-gray {
+  font-family: Roboto-medium;
+  font-size: 14px;
+  color: #717171;
+}
+
+.detail-search-box {
+  width: 130px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #eb662b;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  transition-delay: 0.2s;
+}
+
+.detail-search-box:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 1180px) {
   .navigation {
     gap: 10px;
