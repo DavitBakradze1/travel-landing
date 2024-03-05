@@ -540,6 +540,21 @@ label{
   color: #09c372;
 }
 
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #eb662b;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.burger-nav {
+  display: none;
+}
+
 @media (max-width:1180px){
   .navigation{
     gap: 10px;
@@ -596,10 +611,47 @@ label{
     display: none;
   }
 
-  .burger-menu{
-    display: block;
-    z-index: 2;
+  .burger-nav {
+    position: absolute;
+    left: -100%;
+    top: 80px;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 248, 255, 0.8);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    list-style: none;
+    gap: 20px;
+    padding: 15px 0;
+    border-radius: 4%;
+    
   }
+
+  .nav-name{
+    color: #05073c;
+  }
+
+  .burger-nav.active {
+    left: 0px;}
+
+  .burger-menu {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  .burger-menu.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+  .burger-menu.active .bar:nth-child(1) {
+      transform: translateY(13.5px) rotate(45deg);
+    }
+  
+  .burger-menu.active .bar:nth-child(3) {
+      transform: translateY(-13.5px) rotate(-45deg);
+    }
 
   .login-animation-box{
     width: 350px;
@@ -618,6 +670,18 @@ label{
 @media (max-width: 768px) {
   .footer {
     height: 80px;
+    position: relative;
+    z-index: auto;
+  }
+
+  .fixed{
+    position: relative;
+    z-index: auto;
+  }
+
+  .blur-page{
+    position: relative;
+    
   }
 
   .footer-box {
@@ -637,4 +701,6 @@ label{
   .login-form-box{
     background-color: rgb(240, 248, 255, 0.6);
   }
+
+  
 }
