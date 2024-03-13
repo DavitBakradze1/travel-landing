@@ -171,7 +171,7 @@ a {
 
 .details-box {
   display: grid;
-  grid-template-columns: 350px 350px 350px;
+  grid-template-columns: 250px 250px 250px;
 }
 
 .tour-detail-box {
@@ -239,6 +239,40 @@ a {
   .support {
     gap: 10px;
     padding-left: 20px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .detail-search-box {
+    width: 250px;
+  }
+}
+
+@media (max-width: 960px) {
+  .details-box {
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+    gap: 15px;
+  }
+
+  .tour-detail-box {
+    border: 1px solid #eb662b;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.3s linear;
+    transition-delay: 0.2s;
+  }
+
+  .tour-detail-box:hover {
+    background-color: #717171;
+  }
+
+  .tour-detail-box:hover .detail-gray {
+    color: white;
   }
 }
 
