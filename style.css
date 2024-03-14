@@ -230,6 +230,70 @@ a {
   opacity: 0.8;
 }
 
+.promote-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 30px;
+}
+.item {
+  display: none;
+  text-align: center;
+}
+.active {
+  display: block;
+}
+.promote-img {
+  width: 100%;
+  height: 500px;
+  object-position: center;
+  object-fit: cover;
+  position: relative;
+}
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.btn.prev {
+  left: 0;
+}
+.btn.next {
+  right: 0;
+}
+.promotion-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #eb662b;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.active-dot {
+  background-color: #717171;
+}
+
+.slide-shape {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/*responsive*/
 @media (max-width: 1180px) {
   .navigation {
     gap: 10px;
