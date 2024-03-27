@@ -46,3 +46,18 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active-dot";
 }
+
+
+
+
+function showMore(){
+  let more = document.getElementById("hiddenOffer");
+  let selector = document.getElementById("selector")
+  if (more.style.display === "none"){
+    more.style.display = "flex";
+    selector.textContent = "See Less"
+  } else {
+    more.style.display = "none";
+    selector.textContent = "See All"
+  }
+}
