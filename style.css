@@ -456,6 +456,77 @@ a {
   display: none;
 }
 
+.trips-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.trip{
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+.trips-box{
+  width: 100%;
+  position: relative;
+}
+
+.trip-carousel{
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.trip-carousel::-webkit-scrollbar{
+  height: none;
+}
+
+.trip-prev,
+.trip-next{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: large;
+  font-weight: 600;
+}
+
+.trip-prev{
+  left: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+.trip-next{
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.trip-content{
+  display: grid;
+  gap: 30px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.trip-card{
+  width: 300px;
+  height: 417px;
+  background: #05073c;
+  border-radius: 10px;
+}
+
 
 
 /*responsive*/
