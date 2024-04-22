@@ -62,7 +62,7 @@ function showMore(){
   }
 }
 
-const gap = 30;
+const gap = 15;
 
 const tripCarousels = document.querySelectorAll('.trip-carousel');
 const tripContents = document.querySelectorAll('.trip-content');
